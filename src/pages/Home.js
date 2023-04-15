@@ -96,7 +96,7 @@ export const Home = () => {
                   friends where you can unwind after a busy week, this is
                   why we built  catch and all in one platform that solves this problem.
                 </p>
-                <GetStartedbtn />
+                <GetStartedbtn value='Get Started' />
               </Col>
               <Col md={12} lg={6} className='ps-auto ps-md-5'>
                 <Row>
@@ -169,7 +169,7 @@ export const Home = () => {
                   friends where you can unwind after a busy week, this is
                   why we built  catch and all in one platform that solves this problem.
                 </p>
-                <GetStartedbtn />
+                <GetStartedbtn value='Get Started' />
               </Col>
             </Row>
           </Container>
@@ -208,11 +208,11 @@ export const Home = () => {
           >
             Organize your next social gathering with <span style={{color: '#1070FF'}}>Catch</span> up
           </h2>
-          <h4 style={{color: '#717172'}} className='text-center pb-4 head-4'>
+          <h4 style={{color: '#717172'}} className='text-center pb-4 mb-4 head-4'>
             Look no further, Get started today.
           </h4>
           <div className='pb-5'>
-            <GetStartedbtn />
+            <GetStartedbtn value='Get Started'/>
           </div>
         </section>
         <Footer />

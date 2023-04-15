@@ -18,12 +18,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import Form from "react-bootstrap/Form";
 
 // exports
 export {
     NavBar,
     Container,
+    Form,
     GetStartedbtn,
+    Card,
     Row,
     Col,
     Navbar,
