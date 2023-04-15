@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --primary-color: #1070FF;
+    --text-color: #717172;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1.head-1 {
+    font-style: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+h2.head-2 {
+    font-style: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link.link {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-link.signUp {
+    color: white;
+    background-color: var(--primary-color);
+    width: 135px;
+    border-radius: 4px;
+    padding: 12px 32px;
+    text-align: center;
+}
+
+.bg-footer {
+    background-color: var(--primary-color);
+}
+
+#hero {
+    background: url('./assets/images/hero-bg.png');
+    background-size: cover;
+}
+
+#call-to-action {
+    background: url('./assets/images/cta-bg.png');
+    background-size: contain;
+    margin-bottom: -50px;
+}
+
+@media (max-width: 768px) {
+    h1.head-1 {
+        font-size: calc(1.375rem + 4vw);
+        line-height: 55px;
+    }
+
+    h2.head-2 {
+        font-size: calc(1.325rem + 2.5vw)
+    }
+
+    h4.head-4 {
+        font-size: 17px
+    }
 }
