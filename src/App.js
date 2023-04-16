@@ -1,5 +1,5 @@
 import './App.css';
-import { Home, AboutUs, Features, HowItWorks, LogIn, SignUp } from './data/Exports';
+import { Home, AboutUs, Features, HowItWorks, LogIn, SignUp, ForgotPassword } from './data/Exports';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Route path='/Features' element = {<Features />} />
         <Route path='/About_us' element = {<AboutUs />} />
         <Route path='/Log_In' element = {<LogIn />} />
+        <Route path='/Forgot_Password' element = {<ForgotPassword />} />
         <Route path='/Sign_Up' element = {<SignUp />} />
       </Routes>
     </BrowserRouter>

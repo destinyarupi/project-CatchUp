@@ -3,20 +3,22 @@ import { NavBar, Footer, Container, Row, Col, Primarybtn, CTA, SecondaryBtn } fr
 import { aboutUs } from '../data/Data'
 
 export const AboutUs = () => {
+  // about us data
   const aboutUsData = aboutUs.map(data => (
     <div className='mb-5'>
       <p>{data.date}</p>
-      <h4 className='lh-base fw-semibold pb-2'>{data.title}</h4>
+      <h4 className='lh-base fw-semibold pb-2' style={{maxWidth: '600px'}}>{data.title}</h4>
       <div>
         <SecondaryBtn value='Read article'/>
       </div>
     </div>
   ))
+
   return (
     <>
         <NavBar />
         <Container fluid>
-          <Row id='about-us' className='align-items-center justify-content-md-evenly pt-md-5 pt-2 px-2'>
+          <Row id='about-us' className='align-items-center justify-content-md-evenly pt-lg-4 pt-2 px-2'>
             <Col md={6} className='featuresHero-text1'>
               <h1 className='lh-base fw-bold pb-2 pb-md-0'>
                 Helping you establish and maintain better relationships with
@@ -37,38 +39,28 @@ export const AboutUs = () => {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className='align-items-center justify-content-md-evenly pt-4 px-md-5 px-2'>
             <Col md={12}>
               <h1
-                className='head-2 text-start text-md-center fw-bold lh-base mx-auto pb-5 px-2 px-md-0'
+                className='head-2 text-center fw-bold lh-base mx-auto pb-2 pb-md-3 px-2 px-md-0'
                 style={{maxWidth: '864px'}}
               >
                 Catch Up in the Press
               </h1>
             </Col>
             <Col md={12}>
-              <Row className='align-items-center px-2'>
-                <Col md={5} className='position-relative mx-auto d-block d-md-none'>
-                  <img
-                    src={require('../assets/images/aboutUs-Img2.png')}
-                    alt=""
-                    className='img-fluid position-absolute'
-                    style={{top: '-45px', right: '45px'}}
-                  />
+              <Row className='align-items-center justify-content-md-evenly pt-lg-4 pt-2'>
+                <Col md={5} className='position-relative d-block d-md-none py-1 mb-5'>
                   <img src={require('../assets/images/aboutUs-Img1.png')} alt="" className='img-fluid' />
                 </Col>
                 <Col md={7}>
                   {aboutUsData}
-                  <Primarybtn value='Read all'/>
+                  <div className='py-4 mb-5 mb-md-0'>
+                    <Primarybtn value='Read all'/>
+                  </div>
                 </Col>
-                <Col md={5} className='position-relative mx-auto d-none d-md-block'>
-                  <img
-                    src={require('../assets/images/aboutUs-Img2.png')}
-                    alt=""
-                    className='img-fluid position-absolute'
-                    style={{top: '-45px', right: '45px'}}
-                  />
-                  <img src={require('../assets/images/aboutUs-Img1.png')} alt="" className='img-fluid' />
+                <Col md={5} className='position-relative mx-auto d-none d-md-block ps-4'>
+                  <img src={require('../assets/images/aboutUs-Img2.png')} alt="" className='img-fluid' />
                 </Col>
               </Row>
             </Col>

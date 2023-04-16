@@ -12,6 +12,7 @@ import { Home } from "../pages/Home";
 import { HowItWorks } from "../pages/HowItWorks";
 import { LogIn } from "../pages/LogIn";
 import { SignUp } from "../pages/SignUp";
+import { ForgotPassword } from "../pages/ForgotPassword";
 
 // react-bootstrap
 import Container from 'react-bootstrap/Container';
@@ -44,4 +45,5 @@ export {
     HowItWorks,
     LogIn,
     SignUp,
+    ForgotPassword
 }

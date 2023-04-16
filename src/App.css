@@ -51,6 +51,10 @@ h2.head-2 {
     margin-bottom: -50px;
 }
 
+#login, #signup {
+    background: url('./assets/images/login_signUp-bg.png');
+}
+
 .howItWorksData1 {
     padding: 4em;
     background-color: #E7F0FFCC;
