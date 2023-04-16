@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBar, Footer, Container, Row, Col, GetStartedbtn } from '../data/Exports'
+import { NavBar, Footer, Container, Row, Col, Primarybtn } from '../data/Exports'
 import { features } from '../data/Data'
 
 export const Features = () => {
@@ -21,7 +21,7 @@ export const Features = () => {
           >
             {data.desp}
           </p>
-          <GetStartedbtn value='Get Started' />
+          <Primarybtn value='Get Started' />
         </Col>
         {/* desktop view */}
         <Col md={5} className='d-none d-md-block pb-md-5 pb-lg-0'>
@@ -32,7 +32,7 @@ export const Features = () => {
           >
             {data.desp}
           </p>
-          <GetStartedbtn value='Get Started' />
+          <Primarybtn value='Get Started' />
         </Col>
         <Col md={5} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0 d-none d-md-block'>
           <img src={data.src} alt="" className='img-fluid'/>
@@ -52,7 +52,7 @@ export const Features = () => {
           >
             {data.desp}
           </p>
-          <GetStartedbtn value='Get Started' />
+          <Primarybtn value='Get Started' />
         </Col>
         {/* desktop view */}
         <Col md={5} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0 d-none d-md-block'>
@@ -66,7 +66,7 @@ export const Features = () => {
           >
             {data.desp}
           </p>
-          <GetStartedbtn value='Get Started' />
+          <Primarybtn value='Get Started' />
         </Col>
       </>
       }
@@ -74,7 +74,7 @@ export const Features = () => {
   ))
 
   return (
-    <div>
+    <>
         <NavBar />
         <Container fluid className='px-4 px-md-5'>
           <Row id='stay-connected' className='mt-2 mt-md-5'>
@@ -82,6 +82,6 @@ export const Features = () => {
           </Row>
         </Container>
         <Footer />
-    </div>
+    </>
   )
 }

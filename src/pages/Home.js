@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBar, Footer, Container, Row, Col, GetStartedbtn } from '../data/Exports'
+import { NavBar, Footer, Container, Row, Col, Primarybtn, CTA, SecondaryBtn } from '../data/Exports'
 import { stayConnected, testimonials } from '../data/Data'
 import { Link } from 'react-router-dom'
 
@@ -22,10 +22,7 @@ export const Home = () => {
           >
             {data.desp}
           </p>
-          <Link to='/' className='text-decoration-none fw-bold pb-2'>
-            Learn More
-            <i className="fa-solid fa-arrow-right ps-2" style={{color: '#1070FF', fontSize: '11px'}}></i>
-          </Link>
+          <SecondaryBtn value='Learn More' />
         </Col>
         {/* desktop view */}
         <Col md={5} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0 d-none d-md-block'>
@@ -39,10 +36,7 @@ export const Home = () => {
           >
             {data.desp}
           </p>
-          <Link to='/' className='text-decoration-none fw-bold'>
-            Learn More
-            <i className="fa-solid fa-arrow-right ps-2" style={{color: '#1070FF', fontSize: '11px'}}></i>
-          </Link>
+          <SecondaryBtn value='Learn More' />
         </Col>
       </>
       :
@@ -58,10 +52,7 @@ export const Home = () => {
           >
               {data.desp}
           </p>
-          <Link to='/' className='text-decoration-none fw-bold'>
-            Learn More
-            <i className="fa-solid fa-arrow-right ps-2" style={{color: '#1070FF', fontSize: '11px'}}></i>
-          </Link>
+          <SecondaryBtn value='Learn More' />
         </Col>
         <Col md={5} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0 d-none d-md-block'>
           <img src={data.src} alt="" className='img-fluid' />
@@ -91,7 +82,7 @@ export const Home = () => {
   ))
 
   return (
-    <div>
+    <>
         <NavBar />
         <Container fluid>
           {/* Hero Section */}
@@ -105,7 +96,7 @@ export const Home = () => {
                 friends where you can unwind after a busy week, this is
                 why we built  catch and all in one platform that solves this problem.
               </p>
-              <GetStartedbtn value='Get Started' />
+              <Primarybtn value='Get Started' />
             </Col>
             <Col md={12} lg={6} className='ps-lg-5'>
               <Row className='justify-content-evenly'>
@@ -178,7 +169,7 @@ export const Home = () => {
                 friends where you can unwind after a busy week, this is
                 why we built  catch and all in one platform that solves this problem.
               </p>
-              <GetStartedbtn value='Get Started' />
+              <Primarybtn value='Get Started' />
             </Col>
           </Row>
           {/* Stay Connected */}
@@ -204,22 +195,9 @@ export const Home = () => {
             </Row>
           </Row>
           {/* Call to Action */}
-          <Row id='call-to-action' className='text-center py-3 pb-4 mt-3 mt-md-5 px-3'>
-            <h2
-              className='head-2 fw-bold lh-base mx-auto pt-5 pb-4 px-1 px-md-0'
-              style={{maxWidth: '957px'}}
-            >
-              Organize your next social gathering with <span style={{color: '#1070FF'}}>Catch</span> up
-            </h2>
-            <h4 style={{color: '#717172'}} className='text-center pb-4 mb-4 head-4'>
-              Look no further, Get started today.
-            </h4>
-            <div className='pb-5'>
-              <GetStartedbtn value='Get Started'/>
-            </div>
-          </Row>
+          <CTA />
         </Container>
         <Footer />
-    </div>
+    </>
   )
 }

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transparent" className='py-3'>
-      <Container>
+    <Navbar collapseOnSelect expand="lg" bg="transparent" className='py-3 px-5'>
+      <Container fluid>
         {/* Nav brand logo */}
         <Link className="navbar-brand me-2 fw-bold fs-2" to="/">
           <span style={{color: "#1070FF"}}>Catch</span>

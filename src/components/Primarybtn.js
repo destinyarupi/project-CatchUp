@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const GetStartedbtn = (props) => {
+export const Primarybtn = (props) => {
   return (
     <Link
       to='/Log_In'

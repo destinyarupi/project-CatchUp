@@ -110,3 +110,18 @@ export const features = [
         src: require('../assets/images/featuresImg3.png')
     },
 ]
+
+export const aboutUs = [
+    {
+        date: '8 November, 2022 . Tech Crunch',
+        title: '6 reasons Catch Up is  THAT platform for keeping up with your friends.',
+    },
+    {
+        date: '8 November, 2022 . Techpoint Africa',
+        title: 'The Future of Event Scheduling',
+    },
+    {
+        date: '8 November, 2022 . Tech Crunch',
+        title: 'Platfroms for you & your friends to keep up with',
+    },
+]

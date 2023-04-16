@@ -1,7 +1,9 @@
 // components
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
-import { GetStartedbtn } from "../components/GetStartedbtn";
+import { Primarybtn } from "../components/Primarybtn";
+import { SecondaryBtn } from "../components/SecondaryBtn";
+import { CTA } from "../components/CTA";
 
 // pages
 import { AboutUs } from "../pages/AboutUs";
@@ -25,8 +27,10 @@ import Form from "react-bootstrap/Form";
 export {
     NavBar,
     Container,
+    CTA,
     Form,
-    GetStartedbtn,
+    Primarybtn,
+    SecondaryBtn,
     Card,
     Row,
     Col,

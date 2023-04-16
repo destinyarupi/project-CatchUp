@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { NavBar, Footer, Container, Row, Col, GetStartedbtn, Form } from '../data/Exports'
+import { NavBar, Footer, Container, Row, Col, Primarybtn, Form } from '../data/Exports'
 import { howItWorksCards1, howItWorksCards2 } from '../data/Data'
 
 export const HowItWorks = () => {
@@ -60,7 +60,7 @@ export const HowItWorks = () => {
   }
 
   return (
-    <div>
+    <>
         <NavBar />
           <Container fluid className='overflow-hidden'>
             <Row className='align-items-center px-3 px-md-0 mt-4'>
@@ -104,7 +104,7 @@ export const HowItWorks = () => {
                   someone later is just as easy as when you create the gathering, and the process
                   makes sure they didn’t miss anything no matter when they were added.
                 </p>
-                <GetStartedbtn value='Get Started Now' />
+                <Primarybtn value='Get Started Now' />
               </Col>
             </Row>
             <Row className='align-items-center px-3 px-md-0 mt-4'>
@@ -185,6 +185,6 @@ export const HowItWorks = () => {
             </Row>
           </Container>
         <Footer />
-    </div>
+    </>
   )
 }
