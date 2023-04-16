@@ -10,7 +10,7 @@ export const stayConnected = [
         src: require('../assets/images/stayConnectedImg-2.png')
     },
     {
-        title: 'Be in sync ',
+        title: 'Be in sync',
         desp: 'It only get easier with catch up. Sync your calendars with our platform and get your activities in one place at a glance. Set reminders on and not miss out on events from there friends.',
         src: require('../assets/images/stayConnectedImg-3.png')
     },
@@ -72,23 +72,41 @@ export const howItWorksCards1 = [
 
 export const howItWorksCards2 = [
     {
+        src: require('../assets/images/HowItWorks-cardImg6.png'),
+        title: 'Create an account',
+        desp: 'You can easily create an account with your mobile number. We will send you an SMS to confirm your number and then you can start creatcreating your hangout.'
+    },
+    {
         src: require('../assets/images/HowItWorks-cardImg5.png'),
         title: 'Sync with google calendar',
         desp: 'Catch up allows you sync your google calender, in order for you to schedule your events and availability.'
     },
     {
-        src: require('../assets/images/HowItWorks-cardImg6.png'),
-        title: 'Create an account',
-        desp: 'You can easily create an account with your mobile number. We will send you an SMS to confirm your number and then you can start creatcreating your hangout.'
+        src: require('../assets/images/HowItWorks-cardImg8.png'),
+        title: 'Add invitees from your contacts',
+        desp: 'You can add as many invitees from your contact list and then finalize on your gathering. Each person will be able to see your get together details, they can accept or decline requests'
     },
     {
         src: require('../assets/images/HowItWorks-cardImg7.png'),
         title: 'Hit the “+” icon to start an invitation ',
         desp: 'Once you’re in the app, all you have to do is hit the ‘+’ icon to start adding the details of your next get together.'
     },
+]
+
+export const features = [
     {
-        src: require('../assets/images/HowItWorks-cardImg8.png'),
-        title: 'Add invitees from your contacts',
-        desp: 'You can add as many invitees from your contact list and then finalize on your gathering. Each person will be able to see your get together details, they can accept or decline requests'
+        title: 'Availability Preferences',
+        desp: 'One of our most important feautures at catch up, is the availability prefrences where your friends can notify you the host of there availabilty for the event you scheduled. You would get a notification in real time on our platform and in your mail.',
+        src: require('../assets/images/featuresImg1.png')
+    },
+    {
+        title: 'Sync Calendar',
+        desp: 'We have made it easier for our users to sync there google calendar to our platform through the channel we have created , users can set reminders on there google calendar and not miss out on events from there friends.',
+        src: require('../assets/images/featuresImg2.png')
+    },
+    {
+        title: 'Event Scheduling',
+        desp: 'Catch up enables you to schedule event for your friends, you set the preferred date and time, and send out invites to your friends, which they are later notified of the event seamlessly.',
+        src: require('../assets/images/featuresImg3.png')
     },
 ]

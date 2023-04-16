@@ -47,8 +47,17 @@ h2.head-2 {
 
 #call-to-action {
     background: url('./assets/images/cta-bg.png');
-    background-size: contain;
+    background-size: cover;
     margin-bottom: -50px;
+}
+
+.howItWorksData1 {
+    padding: 4em;
+    background-color: #E7F0FFCC;
+}
+
+.bg-white.cardSize {
+    max-width: 253px;
 }
 
 @media (max-width: 768px) {
@@ -63,5 +72,19 @@ h2.head-2 {
 
     h4.head-4 {
         font-size: 17px
+    }
+
+    .howItWorksData1 {
+        padding: 3em;
+    }
+
+    .bg-white.cardSize {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .bg-white.cardSize {
+        max-width: 22%;
     }
 }

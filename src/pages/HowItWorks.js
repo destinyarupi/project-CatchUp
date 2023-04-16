@@ -4,9 +4,10 @@ import { NavBar, Footer, Container, Row, Col, GetStartedbtn, Form } from '../dat
 import { howItWorksCards1, howItWorksCards2 } from '../data/Data'
 
 export const HowItWorks = () => {
+  // data for first card section
   const howItWorksData1 = howItWorksCards1.map(data => (
-    <Col md={3} className='bg-white rounded-2' style={{width: '256px'}} key={data.title}>
-      <div className='pe-3 mx-auto pt-4 mb-3'>
+    <Col md={5} lg={3} className='bg-white rounded-2 mb-3 mb-md-4 mb-lg-0 cardSize' key={data.title}>
+      <div className='mx-auto pt-4 mb-3'>
         <img src={data.src} alt="" className='img-fluid' />
       </div>
       <div className='pb-4'>
@@ -17,18 +18,25 @@ export const HowItWorks = () => {
     </Col>
   ))
 
+  // data for second card section
   const howItWorksData2 = howItWorksCards2.map((data) => (
-      <Col sm={5} key={data.title} className='rounded d-flex py-3 px-4 mb-5' style={{border: '1px solid #BCD7FF'}}>
-        <div className='pe-3'>
+      <Col
+        sm={5}
+        key={data.title}
+        className='rounded text-center text-md-start d-flex flex-column flex-md-row py-3 px-4 mb-5'
+        style={{border: '1px solid #BCD7FF'}}
+      >
+        <div className='pe-md-3 py-md-0 mx-auto'>
           <img src={data.src} alt="" className='img-fluid' />
         </div>
         <div>
-          <p className='m-0 pb-1 fw-bold'>{data.title}</p>
-          <p className='m-0' style={{color: '#717172'}}>{data.desp}</p>
+          <p className='m-0 pb-3 pb-md-2 fw-bold'>{data.title}</p>
+          <p className='m-0 pb-3' style={{color: '#717172', maxWidth: '425px'}}>{data.desp}</p>
         </div>
       </Col>
   ))
 
+  // handling form data
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -36,6 +44,7 @@ export const HowItWorks = () => {
     message: ''
   })
 
+  // collecting form data
   const handleChange = event => {
     setFormData (prevState => {
       return {
@@ -45,43 +54,44 @@ export const HowItWorks = () => {
     })
   }
 
+  // preventing empty form submission
   const handleSubmit = event => {
-    event.prevent.Default()
+    event.preventDefault()
   }
 
   return (
     <div>
         <NavBar />
-          <Container fluid>
+          <Container fluid className='overflow-hidden'>
             <Row className='align-items-center px-3 px-md-0 mt-4'>
               <Col sm={12}>
                 <h1
-                  className='head-2 text-center fw-bold lh-base mx-auto pt-3 px-1 px-md-0 pb-2'
+                  className='head-2 text-center fw-bold lh-base mx-auto pt-0 pt-md-3 px-1 px-md-0 pb-2'
                   style={{maxWidth: '864px'}}
                 >
                 <span style={{color: '#1070FF'}}>Catch</span> up makes it easier to connect with your friends and family
                 </h1>
               </Col>
-              <Col sm={12} className='text-center'>
+              <Col sm={11} className='mx-auto'>
                 <img src={require('../assets/images/HowItWorks-Img1.png')} alt="" className='img-fluid' />
               </Col>
             </Row>
-            <Row className='justify-content-evenly px-3 px-md-0'>
+            <Row className='justify-content-evenly px-0 px-md-0'>
               <h1
-                className='head-2 text-center fw-bold lh-base mx-auto pt-5 px-1 px-md-0 pb-3'
+                className='head-2 text-center fw-bold lh-base pt-5 px-2 pb-3'
                 style={{maxWidth: '864px'}}
               >
                 Plan and organise every get-together, from dinner to a reunion.
               </h1>
-              <Row className='rounded justify-content-around text-center mb-5' style={{backgroundColor: '#E7F0FFCC', padding: '5em'}}>
+              <Row className='rounded justify-content-around text-center px-4 px-md-2 px-lg-5 mb-5 howItWorksData1'>
                 {howItWorksData1}
               </Row>
             </Row>
             <Row className='justify-content-evenly align-items-center px-3 px-md-0 mt-3'>
-              <Col md={6} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0'>
+              <Col md={5} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0'>
                 <img src={require('../assets/images/HowItWorks-Img2.png')} alt="" className='img-fluid'/>
               </Col>
-              <Col md={4} className='pb-3 pb-md-0'>
+              <Col md={5} className='pb-3 pb-md-0'>
                 <h2 className='fw-bold pb-3 lh-base' style={{color: '#0056D6'}}>Instantly invite anyone on your contact list</h2>
                 <p
                   style={{color: '#717172', textAlign: 'justify', lineHeight:'27px', maxWidth: '415px'}}
@@ -103,16 +113,16 @@ export const HowItWorks = () => {
                   Watch how easy it is to create your next get-together.
                 </h1>
               </Col>
-              <Col sm={12} className='text-center'>
+              <Col sm={11} className='mx-auto'>
                 <img src={require('../assets/images/HowItWorks-Img3.png')} alt="" className='img-fluid' />
               </Col>
             </Row>
-            <Row className='justify-content-evenly px-3 px-md-0 mt-5 pt-5'>
+            <Row className='justify-content-evenly px-4 px-md-0 mt-5 pt-5'>
               {howItWorksData2}
             </Row>
             <Row className='justify-content-evenly align-items-center px-3 px-md-0 mt-5'>
               <Col md={4} className='pb-3 pb-md-0'>
-                <h1 className='fw-bold pb-3' style={{color: '#0056D6', width: '385px'}}>Still have questions?</h1>
+                <h1 className='fw-bold pb-3' style={{color: '#0056D6', maxWidth: '385px'}}>Still have questions?</h1>
                 <p
                   style={{color: '#000000', textAlign: 'justify', lineHeight:'24px', maxWidth: '415px'}}
                   className='pb-4 fw-semibold'
@@ -121,7 +131,7 @@ export const HowItWorks = () => {
                 </p>
               </Col>
               <Col md={6} style={{maxWidth: '456.5px'}} className='pb-5 pb-md-0'>
-                <form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}>
                   {/* Name input */}
                   <Row className="mb-4">
                     <Col>
@@ -170,7 +180,7 @@ export const HowItWorks = () => {
                   </div>
                   {/* Submit button */}
                   <button type="submit" className="w-100 btn btn-primary btn-block mb-4">Send</button>
-                </form>
+                </Form>
               </Col>
             </Row>
           </Container>
