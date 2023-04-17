@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom'
 export const SignUp = () => {
   return (
     <Container fluid >
-      <Row className='justify-content-center'>
-        <Col className='px-3' id='login'>
-          <div className='d-flex justify-content-between align-items-center'>
-            <Link className="navbar-brand me-2 fw-bold fs-1 ps-lg-4 position-md-absolute top-0 py-2" to="/">
+      <Row className='justify-content-center align-items-center' style={{height: '100vh'}}>
+        <Col id='signup'>
+          <div className='d-flex justify-content-between align-items-center position-md-absolute pe-md-3'>
+            <Link className="navbar-brand me-2 fw-bold fs-1" to="/">
               <span style={{color: "#1070FF"}}>Catch</span>
               <span style={{color: "#151517"}}>Up</span>
             </Link>
-            <div className='d-flex align-items-center rounded-2 px-3 py-2 mt-2 me-lg-4' style={{backgroundColor: '#BCD7FF33', height: 'fit-content'}}>
+            <div className='d-flex align-items-center rounded-2 px-3 py-2' style={{backgroundColor: '#BCD7FF33', height: 'fit-content'}}>
               <img src={require('../assets/icons/NG.png')} alt="" className='img-fluid pe-2' />
               <small className='fw-semibold'>English</small>
             </div>
           </div>
-          <Form style={{maxWidth: '425px'}} className='mx-auto mt-lg-5 mt-4 pt-lg-1'>
+          <Form style={{maxWidth: '425px'}} className='mx-auto pt-2 mt-5 mt-md-0'>
             <header>
               <h2 className='pb-1'>Welcome!</h2>
               <p>Sign up here! Please enter your details</p>
@@ -55,13 +55,7 @@ export const SignUp = () => {
             </footer>
           </Form>
         </Col>
-        <Col className='p-0 d-none d-lg-block'>
-          <img
-            src={require('../assets/images/login_signUp-img.png')}
-            alt=""
-            className='img-fluid'
-          />
-        </Col>
+        <Col className='p-0 d-none d-md-block col-bg'></Col>
       </Row>
     </Container>
   )
