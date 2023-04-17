@@ -19,7 +19,7 @@ export const Error404 = () => {
                     style={{backgroundColor: '#1070FF', padding: '16px 32px'}}
                     className='text-white text-decoration-none rounded-1'
                 >
-                    <i className="fa-solid fa-arrow-left ps-3" style={{color: '#ffffff'}}></i>
+                    <i className="fa-solid fa-arrow-left pe-3" style={{color: '#ffffff'}}></i>
                     Return Home
                 </Link>
             </Col>
