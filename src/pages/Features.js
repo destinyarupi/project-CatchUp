@@ -76,10 +76,8 @@ export const Features = () => {
   return (
     <>
         <NavBar />
-        <Container fluid className='px-4 px-md-5'>
-          <Row id='stay-connected' className='mt-2 mt-md-5'>
-            {featuresData}
-          </Row>
+        <Container fluid id='stay-connected' className='px-4 px-md-5 mt-2 mt-md-5'>
+          {featuresData}
         </Container>
         <Footer />
     </>

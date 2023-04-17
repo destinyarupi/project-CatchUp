@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavBar, Footer, Container, Row, Col, Primarybtn, CTA, SecondaryBtn } from '../data/Exports'
 import { stayConnected, testimonials } from '../data/Data'
-import { Link } from 'react-router-dom'
 
 export const Home = () => {
   // stay connected section data

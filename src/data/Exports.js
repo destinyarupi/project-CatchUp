@@ -13,6 +13,12 @@ import { HowItWorks } from "../pages/HowItWorks";
 import { LogIn } from "../pages/LogIn";
 import { SignUp } from "../pages/SignUp";
 import { ForgotPassword } from "../pages/ForgotPassword";
+import { Careers } from "../pages/Careers";
+import { ContactUs } from "../pages/ContactUs";
+import { FAQs } from "../pages/FAQs";
+import { Help } from "../pages/Help";
+import { PrivacyPolicy } from "../pages/PrivacyPolicy";
+import { TOS } from "../pages/TOS";
 
 // react-bootstrap
 import Container from 'react-bootstrap/Container';
@@ -45,5 +51,11 @@ export {
     HowItWorks,
     LogIn,
     SignUp,
-    ForgotPassword
+    ForgotPassword,
+    Careers,
+    ContactUs,
+    FAQs,
+    Help,
+    PrivacyPolicy,
+    TOS
 }

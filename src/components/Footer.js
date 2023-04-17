@@ -16,9 +16,9 @@ export const Footer = () => {
             </Col>
             <Col md={2} sm={6} className="pb-3 pb-md-0">
                 <Link to="/" className="text-white d-block text-decoration-none pb-4">Company</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4">Careers</Link>
+                <Link to="/Careers" className="text-white d-block text-decoration-none pb-4">Careers</Link>
                 <Link to="/About_us" className="text-white d-block text-decoration-none pb-4">About Us</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4">Contact Us</Link>
+                <Link to="/Contact_Us" className="text-white d-block text-decoration-none pb-4">Contact Us</Link>
             </Col>
             <Col md={2} sm={6} className="pb-3 pb-md-0">
                 <Link to="/" className="text-white d-block text-decoration-none pb-4">Learn</Link>
@@ -26,13 +26,13 @@ export const Footer = () => {
             </Col>
             <Col md={2} sm={6} className="pb-3 pb-md-0">
                 <Link to="/" className="text-white d-block text-decoration-none pb-4">Help</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4">FAQs</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4">Help Center </Link>
+                <Link to="/FAQs" className="text-white d-block text-decoration-none pb-4">FAQs</Link>
+                <Link to="/Help" className="text-white d-block text-decoration-none pb-4">Help Center</Link>
             </Col>
             <Col md={2} sm={6}>
                 <Link to="/" className="text-white d-block text-decoration-none pb-4">Legal</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4">Privacy Policy</Link>
-                <Link to="/" className="text-white d-block text-decoration-none pb-4 lh-base">Terms & Conditions</Link>
+                <Link to="/Privacy_Policy" className="text-white d-block text-decoration-none pb-4">Privacy Policy</Link>
+                <Link to="/Terms_and_conditions" className="text-white d-block text-decoration-none pb-4 lh-base">Terms & Conditions</Link>
             </Col>
           </Row>
         </Container>

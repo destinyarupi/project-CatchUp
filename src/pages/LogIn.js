@@ -17,7 +17,7 @@ export const LogIn = () => {
               <small className='fw-semibold'>English</small>
             </div>
           </div>
-          <Form style={{maxWidth: '425px'}} className='mx-auto mt-5 pt-2 mt-md-0'>
+          <Form style={{maxWidth: '425px'}} className='mx-auto mt-5 pt-md-5 mt-md-0'>
             <header>
               <h2 className='pb-1'>Welcome Back!</h2>
               <p>Please enter your details to log in</p>
@@ -57,7 +57,7 @@ export const LogIn = () => {
                 Sign In with Google
               </button>
               <Link to='/Sign_Up' className='text-decoration-none mt-2'>
-                Don’t have an account yet? Sign Up for free
+                <span className='text-black'>Don’t have an account yet?</span> Sign Up for free
               </Link>
             </footer>
           </Form>

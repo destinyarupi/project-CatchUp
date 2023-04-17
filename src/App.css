@@ -40,7 +40,7 @@ h2.head-2 {
     background-color: var(--primary-color);
 }
 
-#hero, #about-us {
+#hero, #about-us, #forgotPassword {
     background: url('./assets/images/hero-bg.png');
     background-size: cover;
 }
@@ -82,7 +82,7 @@ h2.head-2 {
 
 .position-md-absolute {
     position: absolute;
-    top: 20px;
+    top: 0;
     width: 50%;
 }
 
@@ -119,6 +119,7 @@ h2.head-2 {
     .position-md-absolute {
         position: relative;
         width: 100%;
+        top: 15px;
     }
 }
 

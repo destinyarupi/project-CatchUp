@@ -17,7 +17,7 @@ export const SignUp = () => {
               <small className='fw-semibold'>English</small>
             </div>
           </div>
-          <Form style={{maxWidth: '425px'}} className='mx-auto pt-2 mt-5 mt-md-0'>
+          <Form style={{maxWidth: '425px'}} className='mx-auto pt-md-5 mt-5 mt-md-0'>
             <header>
               <h2 className='pb-1'>Welcome!</h2>
               <p>Sign up here! Please enter your details</p>
@@ -50,7 +50,7 @@ export const SignUp = () => {
                 Sign In with Google
               </button>
               <Link to='/Log_In' className='text-decoration-none mt-2'>
-                Have an account already? Log In
+                <span className='text-black'>Have an account already?</span> Log In
               </Link>
             </footer>
           </Form>
