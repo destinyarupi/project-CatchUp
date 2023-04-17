@@ -19,6 +19,7 @@ import { FAQs } from "../pages/FAQs";
 import { Help } from "../pages/Help";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { TOS } from "../pages/TOS";
+import { Error404 } from "../pages/Error404";
 
 // react-bootstrap
 import Container from 'react-bootstrap/Container';
@@ -57,5 +58,6 @@ export {
     FAQs,
     Help,
     PrivacyPolicy,
-    TOS
+    TOS,
+    Error404
 }

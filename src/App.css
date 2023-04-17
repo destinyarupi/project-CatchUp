@@ -40,7 +40,7 @@ h2.head-2 {
     background-color: var(--primary-color);
 }
 
-#hero, #about-us, #forgotPassword {
+#hero, #about-us, #forgotPassword, #contactUs {
     background: url('./assets/images/hero-bg.png');
     background-size: cover;
 }

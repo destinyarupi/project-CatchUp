@@ -406,3 +406,24 @@ export const privacyPolicy = [
         content: 'Catch reserves the right to update this Privacy Policy at any time. The most current version of this policy is available at catchup.com/privacy-policy.'
     },
 ]
+
+export const contactUs = [
+    {
+        heading: 'Chat us up',
+        icon: require('../assets/icons/chatIcon.png'),
+        info1: 'Our friendly team is here to help',
+        info2: 'hi@catchup.com'
+    },
+    {
+        heading: 'Office',
+        icon: require('../assets/icons/locationIcon.png'),
+        info1: 'Come say  hello to our offline HQ',
+        info2: '42 mark cresent silver tower 3rd floor'
+    },
+    {
+        heading: 'Phone',
+        icon: require('../assets/icons/phoneIcon.png'),
+        info1: 'Mon-Fri 9am - 4pm',
+        info2: '+838 8372 226'
+    },
+]
