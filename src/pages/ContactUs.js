@@ -40,7 +40,7 @@ export const ContactUs = () => {
                     type="etext"
                     id="lastName"
                     className="form-control"
-                    placeholder='Enter your email address'
+                    placeholder='Last Name'
                   />
                 </Form.Group>
                 {/* Email input */}

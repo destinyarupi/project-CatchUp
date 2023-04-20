@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -40,7 +41,7 @@ h2.head-2 {
     background-color: var(--primary-color);
 }
 
-#hero, #about-us, #forgotPassword, #contactUs {
+#hero, #about-us, #forgotPassword, #contactUs, #careers {
     background: url('./assets/images/hero-bg.png');
     background-size: cover;
 }

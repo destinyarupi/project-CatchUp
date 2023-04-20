@@ -6,8 +6,8 @@ export const Error404 = () => {
   return (
     <>
         <NavBar />
-        <Container fluid id='forgotPassword' className='px-2 px-md-5 mt-2'>
-          <Row className='align-items-center justify-content-around mx-auto p-0 mb-5 pb-3'>
+        <Container fluid id='forgotPassword' className='px-2 px-md-5 mt-2 mt-md-4'>
+          <Row className='align-items-center justify-content-around mx-auto p-0 mb-5'>
             <Col md={5} style={{maxWidth: '456.5px'}} className='pb-3 pt-3 d-block d-md-none'>
               <img src={require('../assets/images/404Img.png')} alt="" className='img-fluid' />
             </Col>
